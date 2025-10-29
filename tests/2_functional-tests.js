@@ -11,8 +11,7 @@ chai.use(chaiHttp);
 const assert = chai.assert;
 const server = require('../server');
 
-
-
+let testBookId; // Variable to store book ID across tests
 
 suite('Functional Tests', function() {
   suite('#example Test GET /api/books', function() {
@@ -26,7 +25,6 @@ suite('Functional Tests', function() {
         });
     });
   });
-});
 
   /*
   * ----[END of EXAMPLE TEST]----
@@ -169,3 +167,4 @@ suite('Functional Tests', function() {
 
   });
 
+});
